@@ -1,0 +1,1 @@
+This directory is for examples that we work thrugh in class
