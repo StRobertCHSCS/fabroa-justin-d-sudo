@@ -1,0 +1,20 @@
+#identify the pins
+readlight_pin = pin0
+soilmoisturesesonsor_pin = pin1
+crashsensor_pin = pin2
+greenlight_pin = pin4
+miniservo_pin = pin 8
+
+#other variables
+healthwarning = false 
+
+while True: 
+    if soilmoisturesensor_pin.read_analog >50 and <100:
+        print("Your plant is good. Moisture level is %d" % soilmoisturesensor_pin.read_analog)
+        greenlight_pin.write_digital(4)
+        
+    else:
+        print("Your plant needs water. Moisture level is %d" % soilmoisturesensor_pin.read_analog)
+        redlight_pin.write_digital(0)
+
+
