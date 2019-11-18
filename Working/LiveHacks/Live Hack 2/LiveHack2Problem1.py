@@ -1,7 +1,7 @@
 '''
 -------------------------------------------------------------------------------
 Name:		LiveHack2Problem1.py
-Purpose:	Determine the BMI of the patient
+Purpose:	Determine the BMI of the patient to assess their health
 
 Author:		Lau.J
 
@@ -14,7 +14,7 @@ height = float(input("Enter your height in metres: "))
 weight = float(input("Enter your weight in kilograms: "))
 
 # COMPUTE the BMI(body mass index)
-bodymassindex = weight/height**2
+bodymassindex = weight/(height*height)
 
 # OUTPUT the message to determine the health of patient
 if bodymassindex > 25:
